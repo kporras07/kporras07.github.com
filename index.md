@@ -3,7 +3,7 @@ layout: page
 title: Welcome to kporras07 Blog!
 tagline: Supporting tagline
 author: Kevin Porras
-image: assets/page_images/home_image.jpg
+image: /assets/page_images/home_image.jpg
 ---
 {% include JB/setup %}
 
