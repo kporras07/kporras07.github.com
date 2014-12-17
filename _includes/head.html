@@ -13,10 +13,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
+  <meta content="{{ page.url | prepend: site.baseurl | prepend: site.url }} property="og:url"">
+  <meta content="{{ page.title }}" property="og:title">
+  <meta content="{{ page.description }}" property="og:description">
+  <meta content="{{ page.image | prepend: site.baseurl | prepend: site.url }} property="og:image"">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
