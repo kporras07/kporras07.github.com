@@ -15,8 +15,16 @@
 
   <meta content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" property="og:url">
   <meta content="{{ page.title }}" property="og:title">
-  <meta content="{{ page.description }}" property="og:description">
-  <meta content="{{ page.share_image | prepend: site.baseurl | prepend: site.url }}" property="og:image">
+  <meta content="{{ site.fbid }}" property="fb:app_id">
+  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="article" property="og:type">
+  <meta content="{{ site.authorfb }}" property="article:author">
+  {% if page.description != null %}
+    <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+    <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+  <meta content="{{ page.image | prepend: site.baseurl | prepend: site.url }}" property="og:image">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
