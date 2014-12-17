@@ -17,9 +17,12 @@ author :
   email : kporras07@gmail.com
   github : kporras07
   twitter : kporras07
+  bio: Lorem ipsum bio text
+  image: /assets/images/profile.jpg
 url: http://kporras07.github.io
 logo: /assets/images/kp.jpg
 cover: /assets/page_images/home_image.jpg
+author_image: /assets/images/profile.jpg
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
