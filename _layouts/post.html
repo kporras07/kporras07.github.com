@@ -72,6 +72,32 @@
             {% endfor %}
           </section>
         </footer>
+          <div class="tags-categories">
+            <div class="categories isLeft">
+              <ul class="list-category list-linear">
+                <li class="list-head">Category: </li>
+                  {% assign categories_list = page.categories %}
+                  {% include JB/categories_list %}
+              </ul>
+            </div>
+            <div class="tags isRight">
+              <ul class="list-tag list-linear">
+                <li class="list-head">Tags: </li>
+                  {% assign tags_list = page.tags %}
+                  {% include JB/tags_list %}
+              </ul>
+            </div>
+          </div>
+          <div class="misc-content">
+              <div class="social">
+                  <ul class="list-linear">
+                      <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.author.twitter }}" data-lang="en">Tweet</a></div></li>
+                      <li><div class="twitter-follow"><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+                      <li><div class="fb-like" data-href="{{ page.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"</div></li>
+                      <li><div class="g-plusone" data-size="medium"></div></li>
+                  </ul>
+              </div>
+          </div><!-- misc-content -->
         <div class="bottom-teaser cf">
           <div class="isLeft">
             <h5 class="index-headline featured"><span>Written by</span></h5>
@@ -100,6 +126,9 @@
               </div>
             </footer>
           </div>
+        </div>
+        <div class="comment">
+            {% include JB/comments %}
         </div>
       </article>
     </main>
