@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Hello World!
+title: Welcome to kporras07 Blog!
 tagline: Supporting tagline
+author: Kevin Porras
+image: assets/images/background_image.jpg
 ---
 {% include JB/setup %}
 

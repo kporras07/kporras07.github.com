@@ -9,13 +9,16 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
+title : Kporras07 Blog
+description: Blog of Kporras07
 tagline: Site Tagline
 author :
   name : Kevin Jesús Porras Zumbado
   email : kporras07@gmail.com
   github : kporras07
   twitter : kporras07
+url: http://kporras07.github.io
+logo: /assets/images/df_logo.jpg
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
