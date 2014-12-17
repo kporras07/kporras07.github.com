@@ -19,7 +19,7 @@ author :
   twitter : kporras07
 url: http://kporras07.github.io
 logo: /assets/images/kp.jpg
-cover: assets/page_images/home_image.jpg
+cover: /assets/page_images/home_image.jpg
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
