@@ -93,7 +93,7 @@
                   <ul class="list-linear">
                       <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.author.twitter }}" data-lang="en">Tweet</a></div></li>
                       <li><div class="twitter-follow"><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-                      <li><div class="fb-like" data-href="{{ page.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"</div></li>
+                      <li><div class="fb-like" data-href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"</div></li>
                       <li><div class="g-plusone" data-size="medium"></div></li>
                   </ul>
               </div>
