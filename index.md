@@ -22,5 +22,4 @@ This is the actual existing posts list.
 </ul>
 
 ## To Do List
-- Reading time styles
-- Menu
+- Generate content
