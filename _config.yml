@@ -103,8 +103,8 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : google 
-    google : 
+    provider : google
+    google :
     tracking_id : 'UA-57793716-1'
 
   # Settings for sharing helper. 
