@@ -20,3 +20,7 @@ This is the actual existing posts list.
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
+
+## To Do List
+- Reading time styles
+- Menu
