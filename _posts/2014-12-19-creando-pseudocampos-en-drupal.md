@@ -1,5 +1,9 @@
 ---
-published: false
+layout: post
+title:  "Creando pseudocampos en Drupal"
+date:   2014-12-19 15:05:25
+categories: drupal
+tags: drupal pseudocampos
 ---
 
 ## Creando pseudocampos en Drupal
