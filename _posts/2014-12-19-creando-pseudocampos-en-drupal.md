@@ -14,33 +14,32 @@ Ahora sí; cómo hago eso? [hook_field_extra_fields](https://api.drupal.org/api/
 
 Veamos un ejemplo:
 
-{% highlight php lineos %}
+{% highlight php startinline=true %}
 
+/**
+ * Implements hook_field_extra_fields().
+ */
+function demo_field_extra_fields() {
+  $extra['node']['page']['display']['demo_field'] = array(
+    'label' => t('My Demo Field'),
+    'description' => t('Provides a Demo Field'),
+    'weight' => 0,
+  );
+  return $extra;
+}
 
-    /**
-     * Implements hook_field_extra_fields().
-     */
-    function demo_field_extra_fields() {
-      $extra['node']['page']['display']['demo_field'] = array(
-        'label' => t('My Demo Field'),
-        'description' => t('Provides a Demo Field'),
-        'weight' => 0,
-      );
-      return $extra;
-    }
-
-    /**
-     * Implements hook_node_view().
-     */
-    function cs_feature_apply_to_job_node_view($node, $view_mode, $langcode) {
-      if ($node->type === 'page') {
-        $node->content['demo_field'] = array(
-          '#type' => 'item',
-          '#title' => '',
-          '#markup' => 'Content for your demo field',
-        );
-      }
-    }
+/**
+ * Implements hook_node_view().
+ */
+function demo_node_view($node, $view_mode, $langcode) {
+  if ($node->type === 'page') {
+    $node->content['demo_field'] = array(
+      '#type' => 'item',
+      '#title' => '',
+      '#markup' => 'Content for your demo field',
+    );
+  }
+}
 
 {% endhighlight %}
 
