@@ -12,6 +12,7 @@ tags: blog
 Como prerequisito necesitamos tener *ruby* y *rubygems* instalado en nuestra computadora. Asumiendo que ya lo tenemos; podemos empezar.
 
 Lo primero que necesitamos hacer es instalar jekyll; para ello; desde nuestra consola ejecutamos:
+
     gem install jekyll
     jekyll new my-awesome-site
     cd my-awesome-site
