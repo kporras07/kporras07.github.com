@@ -14,6 +14,9 @@ Ahora sí; cómo hago eso? [hook_field_extra_fields](https://api.drupal.org/api/
 
 Veamos un ejemplo:
 
+{% highlight php lineos %}
+
+
     /**
      * Implements hook_field_extra_fields().
      */
@@ -38,6 +41,8 @@ Veamos un ejemplo:
         );
       }
     }
+
+{% endhighlight %}
 
 En el primer hook le dijimos a Drupal que para los nodos de tipo *page* en el display agregue un campo *demo_field* con esas propiedades.
 En el segundo hook le dijimos a Drupal que si el nodo es de tipo *page* en content (lo que se va a desplegar) agregue *demo_field* (mismo nombre que el extra field) con esas propiedades.
