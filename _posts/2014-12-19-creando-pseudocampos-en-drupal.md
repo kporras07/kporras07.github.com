@@ -13,6 +13,7 @@ Imaginá que necesitás desplegar contenido relativo a un nodo, pero que no se r
 Ahora sí; cómo hago eso? [hook_field_extra_fields](https://api.drupal.org/api/drupal/modules!field!field.api.php/function/hook_field_extra_fields/7) y [hook_node_view](https://api.drupal.org/api/drupal/modules!node!node.api.php/function/hook_node_view/7) vienen al rescate.
 
 Veamos un ejemplo:
+
     /**
      * Implements hook_field_extra_fields().
      */
