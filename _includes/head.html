@@ -24,7 +24,7 @@
   {% else %}
     <meta content="{{ site.description }}" property="og:description">
   {% endif %}
-  <meta content="{{ page.image | prepend: site.baseurl | prepend: site.url }}" property="og:image">
+  <meta content="{{ page.share_image | prepend: site.baseurl | prepend: site.url }}" property="og:image">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
