@@ -2,8 +2,8 @@
 layout: post
 title:  "Lidiando con Varnish en Drupal"
 date:   2015-01-27 09:14:25
-categories: jekyll
-tags: blog
+categories: drupal
+tags: varnish caché
 ---
 
 ## Lidiando con Varnish en Drupal
