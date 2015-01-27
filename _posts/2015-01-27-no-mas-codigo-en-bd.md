@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "No más código en la base de datos por favor!!!"
-date:   2015-01-27 09:14:25
+date:   2015-01-27 09:50:25
 categories: drupal
 tags: "control de versiones" "buenas prácticas"
 ---
