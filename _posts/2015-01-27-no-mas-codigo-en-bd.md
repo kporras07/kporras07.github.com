@@ -3,9 +3,10 @@ layout: post
 title:  "No más código en la base de datos por favor!!!"
 date:   2015-01-27 09:50:25
 categories: drupal
+tags: buenas-prácticas control-de-versiones
 ---
 
-## "No más código en la base de datos por favor!!! (Parte 1)"
+## No más código en la base de datos por favor!!! (Parte 1)
 
 Necesito un mínimo de lógica para mostrar este campo en una vista; cuál es la solución más rápida? views_php. *ERROR*
 
