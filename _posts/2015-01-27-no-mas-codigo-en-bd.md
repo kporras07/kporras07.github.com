@@ -50,6 +50,8 @@ function mimodulo_views_data() {
   return $data;
 }
 
+{% endhighlight %}
+
 ### Campos
 
 Campos, filtros , criterios de ordenación y áreas funcionan todos de manera similar: se declaran en el hook_views_data y utilizando un handler custom, se definen de acuerdo con lo necesitado.
