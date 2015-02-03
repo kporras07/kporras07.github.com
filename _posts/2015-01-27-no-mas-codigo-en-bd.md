@@ -54,6 +54,49 @@ function mimodulo_views_data() {
 
 ### Campos
 
-Campos, filtros , criterios de ordenación y áreas funcionan todos de manera similar: se declaran en el hook_views_data y utilizando un handler custom, se definen de acuerdo con lo necesitado.
+Campos, filtros, criterios de ordenación y áreas funcionan todos de manera similar: se declaran en el hook_views_data y utilizando un handler custom, se definen de acuerdo con lo necesitado. (Cambiando field por filter, sort o area según corresponda).
 
-(aún en proceso...)
+{% highlight php startinline=true %}
+
+/**
+ * Implements hook_views_data().
+ */
+function mimodulo_views_data() {
+  $data = array();
+  $data['node']['mi_campo'] = array(
+    'title' => t('Mi Campo'),
+    'help' => t('Ayuda para Mi Campo'),
+    'field' => array(
+      'handler' => 'node_handler_field_mi_campo',
+    ),
+  );
+  return $data;
+}
+
+{% endhighlight %}
+
+Ahora lo que queda es crear el handler; para ello podemos extender de *views_handler_field* o de alguna de las clases que ya extienden de ella (más información [aquí](https://api.drupal.org/api/views/handlers!views_handler_field.inc/group/views_field_handlers/7, "Views field handlers"))
+
+{% highlight php startinline=true %}
+
+class node_handler_field_mi_campo extends views_handler_field {
+
+  function construct() {
+    parent::construct();
+  }
+
+  function query() {
+    $this->ensure_my_table();
+  }
+
+  function render($values) {
+    // En values disponemos de los campos que hayan en la vista.
+    // Recomiendo dpm($values); para examinar este objeto.
+
+    // Retornar lo que se desee como valor de este campo.
+    return 'mi campo';
+  }
+}
+{% endhighlight %}
+
+En la parte 2 de esta entrada veremos acerca de criterios de ordenación y filtros; y en la parte 3 rules y views_bulk_operations.
