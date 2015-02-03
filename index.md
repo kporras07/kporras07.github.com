@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome to kporras07 Blog!
+title: Bienvenido al Blog de Kporras07!
 tagline: Supporting tagline
 author: Kevin Porras
 image: /assets/page_images/home_image.jpg
