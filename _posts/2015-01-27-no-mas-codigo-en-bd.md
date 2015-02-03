@@ -101,4 +101,4 @@ class node_handler_field_mi_campo extends views_handler_field {
 }
 {% endhighlight %}
 
-En la parte 2 de esta entrada veremos acerca de criterios de ordenación y filtros; y en la parte 3 rules; y en una cuarta parte se hablará de views_bulk_operations.
+En la parte 2 de esta entrada veremos acerca de criterios de ordenación y filtros; en la parte 3 rules; y en una cuarta parte se hablará de views_bulk_operations.
