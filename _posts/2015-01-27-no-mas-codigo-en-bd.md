@@ -77,6 +77,8 @@ function mimodulo_views_data() {
 
 Ahora lo que queda es crear el handler; para ello podemos extender de *views_handler_field* o de alguna de las clases que ya extienden de ella (más información [aquí](https://api.drupal.org/api/views/handlers!views_handler_field.inc/group/views_field_handlers/7, "Views field handlers"))
 
+Este handler se guarda en includes/handlers/ y debe ser referenciado desde el archivo .info del módulo para que views lo pueda detectar.
+
 {% highlight php startinline=true %}
 
 class node_handler_field_mi_campo extends views_handler_field {
@@ -99,4 +101,4 @@ class node_handler_field_mi_campo extends views_handler_field {
 }
 {% endhighlight %}
 
-En la parte 2 de esta entrada veremos acerca de criterios de ordenación y filtros; y en la parte 3 rules y views_bulk_operations.
+En la parte 2 de esta entrada veremos acerca de criterios de ordenación y filtros; y en la parte 3 rules; y en una cuarta parte se hablará de views_bulk_operations.
