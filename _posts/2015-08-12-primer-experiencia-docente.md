@@ -1,6 +1,7 @@
 ---
-published: false
+published: true
 ---
+
 
 ## Mi Primer Experiencia Docente
 
@@ -19,6 +20,3 @@ El tiempo pasó, y hoy ha sido la clase final; y puedo decir con gran satisfacci
 Gracias CETAV, gracias Parque La Libertad, gracias coordinador, gracias estudiantes por haber depositado en mí su confianza; espero que ustedes estén igual de felices que yo con los resultados obtenidos y quedo completamente a sus órdenes.
 
 Que el CETAV y el Parque La Libertad siga creciendo y formando profesionales apasionados por lo que hacen.
-
-
-
