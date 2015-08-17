@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+date: 2015-08-12T19:42:25.000Z
+categories: personal
+tags: "docente primera-vez"
 ---
 
 
