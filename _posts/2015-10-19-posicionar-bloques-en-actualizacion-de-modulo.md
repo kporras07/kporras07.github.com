@@ -13,11 +13,11 @@ Si has tenido la oportunidad de desarrollar en Drupal y has querido mantener tod
 
 La única forma de hacerlo que he encontrado es a través de los hooks de instalación/habilitación/actualización de Drupal (hook_install, hook_enable, hook_update_N). En este caso vamos a trabajar con el hook_update_N.
 
-Tengo un módulo llamado "mi_bloque" que lo provee el módulo "mi_modulo" (que es el módulo donde voy a escribir este código). Entonces, para posicionarlo en la región "header" del tema "bartik" tendría que hacer algo como así:
+Tengo un bloque llamado "mi_bloque" que lo provee el módulo "mi_modulo" (que es el módulo donde voy a escribir este código). Entonces, para posicionarlo en la región "header" del tema "bartik" tendría que utilizar el siguiente código:
 
 {% highlight php startinline=true %}
 /**
- * Set mi_bloque in header region in bartik theme.
+ * Posicionar mi_bloque en la región header del tema bartik.
  */
 function mi_modulo_update_7000() {
   // Limpiar la caché de bloques para asegurarse que los bloques que necesitamos ya existan.
@@ -36,7 +36,7 @@ function mi_modulo_update_7000() {
 }
 {%endhighlight%}
 
-Revisando el código anterior encontramos una línea que dice `block_flush_caches()`; esta línea lo que hace es limpiar la caché del módulo block para que estemos seguros deque el bloque que vamos a modificar ya exista en el sistema. Sin esta línea, nuestro código podría fallar, en especial si queremos modificar un bloque que apenas se esté creando.
+Revisando el código anterior encontramos una línea que dice `block_flush_caches()`; esta línea lo que hace es limpiar la caché del módulo block para que estemos seguros de que el bloque que vamos a modificar ya exista en el sistema. Sin esta línea, nuestro código podría fallar, en especial si queremos modificar un bloque que apenas se esté creando.
 
 El resto del código lo que hace simplemente es actualizar en la tabla block la fila correspondiente a nuestro bloque en el tema deseado.
 
