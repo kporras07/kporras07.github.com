@@ -36,7 +36,7 @@ function mi_modulo_update_7000() {
 }
 {%endhighlight%}
 
-Revisando el código anterior encontramos una línea que dice <pre>block_flush_caches()</pre>; esta línea lo que hace es limpiar la caché del módulo block para que estemos seguros deque el bloque que vamos a modificar ya exista en el sistema. Sin esta línea, nuestro código podría fallar, en especial si queremos modificar un bloque que apenas se esté creando.
+Revisando el código anterior encontramos una línea que dice `block_flush_caches()`; esta línea lo que hace es limpiar la caché del módulo block para que estemos seguros deque el bloque que vamos a modificar ya exista en el sistema. Sin esta línea, nuestro código podría fallar, en especial si queremos modificar un bloque que apenas se esté creando.
 
 El resto del código lo que hace simplemente es actualizar en la tabla block la fila correspondiente a nuestro bloque en el tema deseado.
 
