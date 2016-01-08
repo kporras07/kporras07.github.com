@@ -1,8 +1,4 @@
 ---
-published: false
----
-
----
 layout: post
 title:  "hook_update_N con multipass"
 date:   2016-01-08 10:21:00
