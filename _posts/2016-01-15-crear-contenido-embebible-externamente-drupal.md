@@ -59,7 +59,7 @@ Los pasos restantes son: crear la función que definimos como _access callback_ 
 /**
  * Access callback for poll embedding.
  */
-function sfg_feature_poll_embed_access($node) {
+function demo_embed_access($node) {
   if ($node->type === 'article' && user_access('access content')) {
     return TRUE;
   }
