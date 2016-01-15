@@ -25,7 +25,7 @@ function ctools_demo_ctools_plugin_directory($owner, $plugin_type) {
 }
 {% endhighlight %}
 
-Con lo anterior, le decimos a ctools que los plugins de tipo _relationship los puede encontrar en la carpeta _plugins/relationships. Ahora, el siguiente paso es declarar e implementar nuestro relationship; para ello, en la carpeta antes mencionada creamos un archivo al que vamos a llamarle en este ejemplo _demo_context_from_node.inc_ y que contiene el siguiente código:
+Con lo anterior, le decimos a ctools que los plugins de tipo _relationship los puede encontrar en la carpeta _plugins/relationships_. Ahora, el siguiente paso es declarar e implementar nuestro relationship; para ello, en la carpeta antes mencionada creamos un archivo al que vamos a llamarle en este ejemplo _demo_context_from_node.inc_ y que contiene el siguiente código:
 
 {% highlight php %}
 <?php
