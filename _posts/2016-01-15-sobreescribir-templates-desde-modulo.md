@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sobreescribir template desde un módulo"
+title:  "Sobreescribir template de Drupal desde un módulo"
 date:   2016-01-15 13:15:00
 context_demo_select: drupal
 tags: drupal template override modulo
