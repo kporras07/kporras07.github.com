@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Crear plugins de ctools (context, relationship, content type) (Parte 1/3)"
-date:   2016-01-08 10:21:00
+date:   2016-01-15 09:21:00
 categories: drupal
 tags: drupal ctools plugins context relationship content type
 ---
@@ -26,7 +26,7 @@ function ctools_demo_ctools_plugin_directory($owner, $plugin_type) {
 }
 {% endhighlight %}
 
-Con lo anterior, le decimos a ctools que los plugins de tipo _context_ los puede encontrar en la carpeta _plugins/context_. Ahora, el siguiente paso es declarar e implementar nuestro contexto; para ellos, en la carpeta antes mencionada creamos un archivo al que vamos a llamarle en este ejemplo _demo_context.inc_ y que contiene el siguiente código:
+Con lo anterior, le decimos a ctools que los plugins de tipo _context_ los puede encontrar en la carpeta _plugins/context_. Ahora, el siguiente paso es declarar e implementar nuestro contexto; para ello, en la carpeta antes mencionada creamos un archivo al que vamos a llamarle en este ejemplo _demo_context.inc_ y que contiene el siguiente código:
 
 {% highlight php %}
 <?php
@@ -102,7 +102,7 @@ function demo_context_convert($context, $type) {
 }
 {% endhighlight %}
 
-En el código anterior vemos como iniciamos describiendo nuestro plugin con un título, una descripción, un keyword por default (es el que se utilizará en la interfaz administrativa y para los tokens). El índice _context_ declara la función que utilizaremos para crear el context; con _edit form_ indicamos el formulario para la edición del contexto; con defauls declaramos algunos valores default para nuestro plugin; con _context name_ especificamos el nombre de nuestro contexto y por último, _convert_ declara la función que utilizaremos para convertir nuestro contexto a un string en caso de que sea usado como token.
+En el código anterior vemos como iniciamos describiendo nuestro plugin con un título, una descripción, un keyword por default (es el que se utilizará en la interfaz administrativa y para los tokens). El índice _context_ declara la función que utilizaremos para crear el context; con _edit form_ indicamos el formulario para la edición del contexto; con defaults declaramos algunos valores default para nuestro plugin; con _context name_ especificamos el nombre de nuestro contexto y por último, _convert_ declara la función que utilizaremos para convertir nuestro contexto a un string en caso de que sea usado como token.
 
 El formulario que definimos para este ejemplo es muy sencillo, entonces expliquemos solamente el submit del mismo: en este, tomamos los valores que vienen del formulario y los guardamos en el índice _conf_ (este se le pasará al contexto en caso de haberlo creado desde la interfaz, pero además, se pasarán vía _$data_ que es de donde debemos utilizarlo.
 
