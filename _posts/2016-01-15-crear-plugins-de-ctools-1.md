@@ -45,7 +45,7 @@ $plugin = array(
   'keyword' => 'demo_context',
   'context' => 'demo_context',
   'edit form' => 'demo_context_settings_form',
-  'defaults' => array('demo_context_select' => array()),
+  'defaults' => array('demo_context_select' => ''),
   'context name' => 'demo_context',
   'convert' => 'demo_context_convert',
 );
@@ -57,7 +57,6 @@ function demo_context_settings_form($form, &$form_state) {
   $form['demo_context_select'] = array(
     '#title' => t('Select an option'),
     '#type' => 'select',
-    '#multiple' => TRUE,
     '#options' => variable_get('demo_context_variable', array()),
     '#default_value' => isset($form_state['conf']['demo_context_select']) ? $form_state['conf']['demo_context_select'] : '',
     '#required' => TRUE,
