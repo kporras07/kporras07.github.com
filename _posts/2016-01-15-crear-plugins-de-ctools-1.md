@@ -26,7 +26,7 @@ function ctools_demo_ctools_plugin_directory($owner, $plugin_type) {
 }
 {% endhighlight %}
 
-Con lo anterior, le decimos a ctools que los plugins de tipo _context_ los puede encontrar en la carpeta _plugins/context_. Ahora, el siguiente paso es declarar e implementar nuestro contexto; para ello, en la carpeta antes mencionada creamos un archivo al que vamos a llamarle en este ejemplo _demo_context.inc_ y que contiene el siguiente código:
+Con lo anterior, le decimos a ctools que los plugins de tipo _context_ los puede encontrar en la carpeta _plugins/contexts_. Ahora, el siguiente paso es declarar e implementar nuestro contexto; para ello, en la carpeta antes mencionada creamos un archivo al que vamos a llamarle en este ejemplo _demo_context.inc_ y que contiene el siguiente código:
 
 {% highlight php %}
 <?php
